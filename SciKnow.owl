@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cui.unige.ch/isi/ontologies/SciKO#"
+     xml:base="http://cui.unige.ch/isi/ontologies/SciKO"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:SciKO="http://cui.unige.ch/isi/ontologies/SciKO#">
+    <owl:Ontology rdf:about="http://cui.unige.ch/isi/ontologies/SciKO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#defines -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#defines"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#expression -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#expression"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#isAbout">
+        <rdfs:subPropertyOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#refersTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#lhsIsAbout -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#lhsIsAbout">
+        <rdfs:subPropertyOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#isAbout"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#lhsRefersTo -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#lhsRefersTo">
+        <rdfs:subPropertyOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#refersTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#proves -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#proves"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#refersTo -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#refersTo"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#rhsRefersTo -->
+
+    <owl:ObjectProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#rhsRefersTo">
+        <rdfs:subPropertyOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#refersTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#lit_expression -->
+
+    <owl:DatatypeProperty rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#lit_expression"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#AlgorithmAssertion -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#AlgorithmAssertion">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Assertion"/>
+        <rdfs:comment>Algorithm A solves problem P (with a time complexity T)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Algorithmic_Language -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Algorithmic_Language">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Formalism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Article -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Article">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Assertion -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Assertion">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Assumption -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Assumption">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Axiomatic_Theory -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Axiomatic_Theory">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Book -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Book">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ChemObject -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ChemObject">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ConceptualModel -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ConceptualModel">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Linguistic_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Database -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Database">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Dataset -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Dataset">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Definition -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Definition">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#defines"/>
+                <owl:someValuesFrom rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Definition_Fragment -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Definition_Fragment">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Text_Fragment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Document -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Document">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Equation_Solution_Existence -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Equation_Solution_Existence">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theorem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#EquationalTheorem -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#EquationalTheorem">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theorem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Experiment -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Experiment">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ExperimentalResult -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ExperimentalResult">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#FormalLanguage -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#FormalLanguage">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Linguistic_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#FormalProof -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#FormalProof">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Proof"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#proves"/>
+                <owl:someValuesFrom rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Assertion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Formalism -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Formalism">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Linguistic_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Hypothesis -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Hypothesis">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Image -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Image">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#LanguageDefinition -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#LanguageDefinition">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Definition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Linguistic_Object -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Linguistic_Object"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#MathObject -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#MathObject">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Measurement -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Measurement">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Media -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Media"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Model -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Model">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ModelAssertion -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ModelAssertion">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ModelDefinition -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ModelDefinition">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Definition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Motivation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Motivation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Notation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Notation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Formalism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Object_Property -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Object_Property">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theorem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Observation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Observation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Operation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Operation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#MathObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#PhysObject -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#PhysObject">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#DomainConcept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Postulate -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Postulate">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Process -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Process"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#ProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#ProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#FormalLanguage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Proof -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Proof">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#proves"/>
+                <owl:someValuesFrom rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Theorem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#QuaternionMultiplication -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionMultiplication">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#QuaternionOperation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionOperation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#QuaternionSquare -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionSquare">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionOperation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#R3Operation -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#R3Operation">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#R3ScalarProduct -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#R3ScalarProduct">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#R3Operation"/>
+        <rdfs:label>scalar product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#R3VectorProduct -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#R3VectorProduct">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#R3Operation"/>
+        <rdfs:label>vector product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Statement -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Statement">
+        <rdfs:comment>An  entity that is used to express knowledge about the domain concepts. A ki is not necessarily the expression of some knowledge (jtb) it can be an entity that takes part in the expression of some knowledge (e.g. a proof, a belief, a definition, ...)
+The dom. concepts are in a separte class (for the time being)
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Survey -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Survey">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Technique_or_Method"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Table -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Table">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#TechniqueOrMethod -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#TechniqueOrMethod">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Technique_or_Method -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Technique_or_Method">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Text -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Text">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Text_Fragment -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Text_Fragment">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Theorem -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Theorem">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Assertion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Theory -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Theory">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Statement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Visual_Formalism -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Visual_Formalism">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Formalism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Other_Fragments_(to_be_defined) -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Other_Fragments_(to_be_defined)">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Text_Fragment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#Survey_(Text) -->
+
+    <owl:Class rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#Survey_(Text)">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9nfVA8rQlN13aQ243d1IqP -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9nfVA8rQlN13aQ243d1IqP">
+        <rdfs:subClassOf rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionOperation"/>
+        <rdfs:label xml:lang="fr">Addition des quaternions</rdfs:label>
+        <rdfs:label>QuaternionAddition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#QuaternionMultiplication -->
+
+    <owl:NamedIndividual rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionMultiplication"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#QuaternionSquare -->
+
+    <owl:NamedIndividual rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionSquare"/>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#qMultiplyEq -->
+
+    <owl:NamedIndividual rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#qMultiplyEq">
+        <rdf:type rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#EquationalTheorem"/>
+        <lhsRefersTo rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionMultiplication"/>
+        <lit_expression>$PQ=\mathbb{S}(P)\mathbb{S}(Q)-\mathbb{V}(P)\cdot\mathbb{V}(Q)+\mathbb{S}(P)\mathbb{V}(Q)+\mathbb{S}(Q)\mathbb{V}(P)+\mathbb{V}(P)\wedge\mathbb{V}(Q)$
+
+PQ = S(P)S(Q) - V(P) . V(Q) + S(P)V(Q) + S(Q)V(P) + V(P) ^ V(Q)</lit_expression>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cui.unige.ch/isi/ontologies/SciKO#qSquareEq -->
+
+    <owl:NamedIndividual rdf:about="http://cui.unige.ch/isi/ontologies/SciKO#qSquareEq">
+        <rdf:type rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#EquationalTheorem"/>
+        <lhsRefersTo rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#QuaternionSquare"/>
+        <lit_expression>$Q^{2}=2\mathbb{S}(Q)Q-\left|Q\right|^{2}$</lit_expression>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7hSgP7y782jjisNsyAUhsY -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7hSgP7y782jjisNsyAUhsY">
+        <rdf:type rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Definition"/>
+        <lit_expression>La partie vectorielle $\mathbb{S}(Q)$ d&apos;un quaternion $Q$ est le quaternion &quot;pur&quot; $-(Q - Q^=)/2$.
+En composantes $\mathbb{S}(Q) = q_1e_1+q_2e_2+q_3e_3$.</lit_expression>
+        <rdfs:label>partie vectorielle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RyokjEINUsntdejw18YR9D -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RyokjEINUsntdejw18YR9D">
+        <rdf:type rdf:resource="http://cui.unige.ch/isi/ontologies/SciKO#Definition"/>
+        <lit_expression>La norme d&apos;un quaternion Q est le nombre réel $Q Q^=$</lit_expression>
+        <rdfs:label>norme</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
